@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Prevent horizontal scrolling on the entire page */
+
+        /* Debugging borders for visualizing overflow */
+        .debug-outline * {
+            /* outline: 1px solid red; */
+        }
+    </style>
 </head>
 
-<body>
-
-    <section class="header w-[80%] mx-auto">
+<body class="overflow-x-hidden debug-outline">
+    <section class="w-[80%] mx-auto">
         <div class="navbar  w-full">
-            <div class="flex flex-row-reverse justify-between w-full lg:w-[20%]">
+            <div class="flex flex-row-reverse w-full lg:w-[20%]">
                 <div class="dropdown w-full flex justify-end">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-9 w-52 p-2 shadow">
                         <li><a>Item 1</a></li>
                         <li>
                             <a>Parent</a>
@@ -38,7 +46,7 @@
                 <a class="btn btn-ghost text-xl">daisyUI</a>
             </div>
             <div class=" hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+                <ul class="menu menu-horizontal   px-1">
                     <li><a>Item 1</a></li>
                     <li>
                         <details>
