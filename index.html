@@ -8,58 +8,92 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./image/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .header {
+            background-color: #212722;
+        }
+
+        .lg-li-color li {
+            color: hsla(127, 8%, 55%, 1);
+        }
+
+        .lg-li-color li:hover {
+            color: white;
+        }
+
+        .lets-btn {
+            background-color: #ea8f10;
+            padding: 1.6rem 3.6rem;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .bg-btn-lets {}
+    </style>
 </head>
 
 <body>
 
-    <section class="w-[90%] mx-auto">
-        <div class="navbar flex justify-between ">
-            <div class="w-full lg:w-[20%] flex flex-row-reverse">
-                <div class="dropdown w-full flex justify-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+    <section class="header bg-[212722]">
+        <div class="navbar w-[90%] mx-auto  flex justify-between">
+            <div class="w-full">
+
+                <div class="w-full lg:w-[20%] flex justify-between flex-row-reverse">
+                    <div class="dropdown flex justify-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-72 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Journal</a></li>
+                            <li><a>Contact</a></li>
+                            <div
+                                class="  lg:hidden w-[90%] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
+                                <a class="">Let's Work Together</a>
+                            </div>
+
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>About</a></li>
-                                <li><a>Services</a></li>
-                                <li><a>Journal</a></li>
-                                <li><a>Contact</a></li>
-                            </ul>
-                        </li>
+                    <a class="text-3xl font-bold w-[50%] flex justify-start lg:w-[10%] text-white">Rashed.</a>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 lg-li-color">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Journal</a></li>
+                        <li><a>Contact</a></li>
+
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-3xl ">Rashed.</a>
-            </div>
-            <div class=" hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>About</a></li>
-                                <li><a>Services</a></li>
-                                <li><a>Journal</a></li>
-                                <li><a> a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
+
             </div>
             <div class="navbar-end hidden lg:flex">
-                <a class="btn">Button</a>
+                <a class="lets-btn bg-[]">Let's Work Together</a>
             </div>
         </div>
+        <section class="banner">
+            <div class="">
+                <div class="text">
+                    <h3>Hello, I'm Monica</h3>
+                    <h1>a front-end developer creating user-friendly and visually appealing websites</h1>
+                    <div class="">
+                        <span><i class="fa-solid fa-arrow-down"></i></span>
+                        <p>Scroll for more</p>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+        </section>
     </section>
 </body>
 
