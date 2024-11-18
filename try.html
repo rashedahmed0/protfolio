@@ -5,66 +5,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./image/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        /* Prevent horizontal scrolling on the entire page */
+        /* .header {
+            background-color: #212722;
+        } */
 
-        /* Debugging borders for visualizing overflow */
-        .debug-outline * {
-            /* outline: 1px solid red; */
+        .lg-li-color li {
+            color: hsla(127, 8%, 55%, 1);
+        }
+
+        .lg-li-color li:hover {
+            color: white;
+        }
+
+        .lets-btn {
+            background-color: #ea8f10;
+            padding: 1.6rem 3.6rem;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .bg-btn-lets {}
+
+        .img {
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .bgc::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #3f2705;
+            position: absolute;
+            bottom: 10px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc2::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #9c5f09;
+            position: absolute;
+            bottom: 25px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc3::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #895104;
+            position: absolute;
+            bottom: 40px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc4::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #5e3a07;
+            bottom: 55px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc5::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #603b07;
+            bottom: 70px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .rashed {
+
+            position: relative;
+        }
+
+
+        .rashed::before {
+            content: "";
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #e48b0e;
+            bottom: 12px;
+            left: -51%;
+
         }
     </style>
 </head>
 
-<body class=" debug-outline">
-    <section class="w-[80%] mx-auto">
-        <div class="navbar  w-full">
-            <div class="flex flex-row-reverse w-full lg:w-[20%]">
-                <div class="dropdown w-full flex justify-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+<body class=" ">
+
+    <div class="bg-[#212722]">
+        <div class="max-w-[1200px] mx-auto">
+            <section class="header pb-10">
+                <div class="navbar w-[90%] mx-auto  flex justify-between">
+                    <div class="w-full">
+
+                        <div class="w-full lg:w-[20%] flex justify-between flex-row-reverse">
+                            <div class="dropdown flex justify-end">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-72 p-2 shadow">
+                                    <li><a>Home</a></li>
+                                    <li><a>About</a></li>
+                                    <li><a>Services</a></li>
+                                    <li><a>Journal</a></li>
+                                    <li><a>Contact</a></li>
+                                    <div
+                                        class="  lg:hidden w-[90%] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
+                                        <a class="">Let's Work Together</a>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <a class="text-3xl font-bold w-[50%] flex justify-start lg:w-[10%] text-white">Rashed.</a>
+                        </div>
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1 lg-li-color">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Journal</a></li>
+                                <li><a>Contact</a></li>
+
+                            </ul>
+                        </div>
+
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-9 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
+                    <div class="navbar-end hidden lg:flex">
+                        <a class="lets-btn bg-[]">Let's Work Together</a>
+                    </div>
                 </div>
-                <a class="btn btn-ghost text-xl">daisyUI</a>
-            </div>
-            <div class=" hidden lg:flex">
-                <ul class="menu menu-horizontal   px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end hidden lg:flex">
-                <a class="btn">Button</a>
-            </div>
+                <section class="banner w-[90%] mx-auto pt-20 pb-5">
+                    <div class="flex justify-between flex-col lg:flex-row">
+                        <div class="text text-white basis-[60%]">
+                            <div class="">
+                                <h3 class="text-xl rashed">Hello, I'm Rashed </h3>
+                                <span class="rashed-bg"></span>
+
+                            </div>
+                            <h1 class="text-5xl font-bold py-9">a front-end developer <br> creating user-friendly and
+                                responsive
+                                websites
+                            </h1>
+                        </div>
+                        <div class="img basis-[30%] flex justify-end">
+                            <span class="bgc5 sm:hidden lg:block"></span>
+                            <span class="bgc4 sm:hidden lg:block"></span>
+                            <span class="bgc3 sm:hidden lg:block"></span>
+                            <span class="bgc2 sm:hidden lg:block"></span>
+                            <span class="bgc sm:hidden lg:block"></span>
+                            <img src="./image/banner.jpg" class="w-3/4 sm:hidden lg:block" alt="banner img">
+                        </div>
+                    </div>
+                </section>
+                <div class="flex items-center  gap-3 w-[90%] mx-auto">
+                    <span
+                        class="border-2 border-[#ea8f10] w-[40px] h-[40px] flex justify-center items-center  rounded-full my-5"><i
+                            class="fa-solid fa-arrow-down text-white"></i></span>
+                    <p class="text-lg text-white">Scroll for more</p>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 </body>
 
 </html>

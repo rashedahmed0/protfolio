@@ -93,6 +93,23 @@
             right: 75%;
             z-index: 1;
         }
+
+        .rashed {
+
+            position: relative;
+        }
+
+
+        .rashed::before {
+            content: "";
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #e48b0e;
+            bottom: 12px;
+            left: -51%;
+
+        }
     </style>
 </head>
 
@@ -148,7 +165,11 @@
                 <section class="banner w-[90%] mx-auto pt-20 pb-5">
                     <div class="flex justify-between flex-col lg:flex-row">
                         <div class="text text-white basis-[60%]">
-                            <h3 class="text-xl">Hello, I'm Rashed Ahommod </h3>
+                            <div class="">
+                                <h3 class="text-xl rashed">Hello, I'm Rashed </h3>
+                                <span class="rashed-bg"></span>
+
+                            </div>
                             <h1 class="text-5xl font-bold py-9">a front-end developer <br> creating user-friendly and
                                 responsive
                                 websites
