@@ -10,9 +10,9 @@
     <link rel="shortcut icon" href="./image/favIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        .header {
+        /* .header {
             background-color: #212722;
-        }
+        } */
 
         .lg-li-color li {
             color: hsla(127, 8%, 55%, 1);
@@ -31,70 +31,148 @@
         }
 
         .bg-btn-lets {}
+
+        .img {
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .bgc::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #3f2705;
+            position: absolute;
+            bottom: 10px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc2::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #9c5f09;
+            position: absolute;
+            bottom: 25px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc3::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: #895104;
+            position: absolute;
+            bottom: 40px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc4::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #5e3a07;
+            bottom: 55px;
+            right: 75%;
+            z-index: 1;
+        }
+
+        .bgc5::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background-color: #603b07;
+            bottom: 70px;
+            right: 75%;
+            z-index: 1;
+        }
     </style>
 </head>
 
-<body>
+<body class=" ">
 
-    <section class="header bg-[212722]">
-        <div class="navbar w-[90%] mx-auto  flex justify-between">
-            <div class="w-full">
+    <div class="bg-[#212722]">
+        <div class="max-w-[1200px] mx-auto">
+            <section class="header pb-10">
+                <div class="navbar w-[90%] mx-auto  flex justify-between">
+                    <div class="w-full">
 
-                <div class="w-full lg:w-[20%] flex justify-between flex-row-reverse">
-                    <div class="dropdown flex justify-end">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-72 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Journal</a></li>
-                            <li><a>Contact</a></li>
-                            <div
-                                class="  lg:hidden w-[90%] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
-                                <a class="">Let's Work Together</a>
+                        <div class="w-full lg:w-[20%] flex justify-between flex-row-reverse">
+                            <div class="dropdown flex justify-end">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-72 p-2 shadow">
+                                    <li><a>Home</a></li>
+                                    <li><a>About</a></li>
+                                    <li><a>Services</a></li>
+                                    <li><a>Journal</a></li>
+                                    <li><a>Contact</a></li>
+                                    <div
+                                        class="  lg:hidden w-[90%] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
+                                        <a class="">Let's Work Together</a>
+                                    </div>
+
+                                </ul>
                             </div>
+                            <a class="text-3xl font-bold w-[50%] flex justify-start lg:w-[10%] text-white">Rashed.</a>
+                        </div>
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1 lg-li-color">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Journal</a></li>
+                                <li><a>Contact</a></li>
 
-                        </ul>
+                            </ul>
+                        </div>
+
                     </div>
-                    <a class="text-3xl font-bold w-[50%] flex justify-start lg:w-[10%] text-white">Rashed.</a>
+                    <div class="navbar-end hidden lg:flex">
+                        <a class="lets-btn bg-[]">Let's Work Together</a>
+                    </div>
                 </div>
-                <div class="hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 lg-li-color">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Journal</a></li>
-                        <li><a>Contact</a></li>
-
-                    </ul>
+                <section class="banner w-[90%] mx-auto pt-20 pb-5">
+                    <div class="flex justify-between flex-col lg:flex-row">
+                        <div class="text text-white basis-[60%]">
+                            <h3 class="text-xl">Hello, I'm Rashed Ahommod </h3>
+                            <h1 class="text-5xl font-bold py-9">a front-end developer <br> creating user-friendly and
+                                responsive
+                                websites
+                            </h1>
+                        </div>
+                        <div class="img basis-[30%] flex justify-end">
+                            <span class="bgc5 sm:hidden lg:block"></span>
+                            <span class="bgc4 sm:hidden lg:block"></span>
+                            <span class="bgc3 sm:hidden lg:block"></span>
+                            <span class="bgc2 sm:hidden lg:block"></span>
+                            <span class="bgc sm:hidden lg:block"></span>
+                            <img src="./image/banner.jpg" class="w-3/4 sm:hidden lg:block" alt="banner img">
+                        </div>
+                    </div>
+                </section>
+                <div class="flex items-center  gap-3 w-[90%] mx-auto">
+                    <span
+                        class="border-2 border-[#ea8f10] w-[40px] h-[40px] flex justify-center items-center  rounded-full my-5"><i
+                            class="fa-solid fa-arrow-down text-white"></i></span>
+                    <p class="text-lg text-white">Scroll for more</p>
                 </div>
-
-            </div>
-            <div class="navbar-end hidden lg:flex">
-                <a class="lets-btn bg-[]">Let's Work Together</a>
-            </div>
+            </section>
         </div>
-        <section class="banner">
-            <div class="">
-                <div class="text">
-                    <h3>Hello, I'm Monica</h3>
-                    <h1>a front-end developer creating user-friendly and visually appealing websites</h1>
-                    <div class="">
-                        <span><i class="fa-solid fa-arrow-down"></i></span>
-                        <p>Scroll for more</p>
-                    </div>
-                </div>
-                <div class="img"></div>
-            </div>
-        </section>
-    </section>
+    </div>
 </body>
 
 </html>
