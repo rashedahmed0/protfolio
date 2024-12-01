@@ -130,6 +130,116 @@
             left: 5%;
             font-size: 20px;
         }
+
+        /* General styles */
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+
+        .skills-container {
+            width: 100%;
+            /* max-width: 600px; */
+            margin: 0 auto;
+        }
+
+        .skill {
+            margin: 20px 0;
+        }
+
+        .skill-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .html {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: htmlSkill;
+        }
+
+        .css {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: cssSkill;
+        }
+
+        .js {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: jsSkill;
+        }
+
+        .bootstrap {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: bootstrapSkill;
+        }
+
+        .tailwind {
+            width: 0;
+            background-color: #ea8f10;
+            animation-name: tailwindSkill;
+        }
+
+        /* Animation keyframes */
+        @keyframes htmlSkill {
+            to {
+                width: 90%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes cssSkill {
+            to {
+                width: 80%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes jsSkill {
+            to {
+                width: 70%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes bootstrapSkill {
+            to {
+                width: 75%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes tailwindSkill {
+            to {
+                width: 85%;
+                /* Adjust percentage for skill level */
+            }
+        }
     </style>
 </head>
 
@@ -201,27 +311,92 @@
     </div>
 
 
+    <div class="max-w-[1200px] mx-auto py-24">
+        <div class="w-[90%] mx-auto">
+            <h1 class="text-3xl md:text-5xl  font-bold py-9 text-center">Some inspiring words to describe yourself</h1>
+            <p class="text-xl ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eos quas blanditiis,
+                quos sint nostrum fugit aperiam inventore optio itaque molestias corporis, ipsa tenetur eligendi nihil
+                iste porro, natus culpa consequuntur? Maxime, corporis tempore. Sed tenetur veritatis velit recusandae
+                eum, molestiae voluptate ducimus laudantium esse illo doloribus atque eligendi deleniti iusto.</p>
+        </div>
+        <div class="flex justify-center w-[90%] mx-auto">
+            <img class="w-[]" src="./image/about.jpg" alt="">
+        </div>
 
-    <div class="bg-[#212722] pb-20">
-        <div class="max-w-[1200px] mx-auto py-24">
-            <div class="w-[90%] mx-auto">
-                <div class="text-center">
-                    <h1 class="md:text-5xl text-4xl lg:text-6xl text-white font-bold my-10">Get started with a
-                        consultation today.</h1>
-                    <p class="text-xl text-white  my-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                        rem,
-                        esse doloribus sint eaque at
-                        debitis enim vitae minus expedita ratione dignissimos sit nostrum optio sequi. Ipsa at beatae
-                        quam.
+        <div class="w-[90%] mx-auto">
+            <div class="">
+                <h3 class="text-3xl font-bold text-[#777] rashed">Skill </h3>
+                <p class="text-xl text-[#777] my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+                    tempore labore
+                    illo consequatur quae. Aspernatur animi modi ex quasi explicabo, vel mollitia, neque voluptate iure
+                    similique ipsam architecto aut cum?</p>
+                <span class="rashed-bg"></span>
 
-                    </p>
-                    <div
-                        class=" lg:w-[30%] w-[90%] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-xl text-center font-semibold">
-                        <a class="">Let's Work Together</a>
+            </div>
+            <div class="skills-container">
+                <div class="skill ">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            HTML
+
+                        </p>
+                        <div class="percentage text-[#999]">90%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            CSS
+
+                        </p>
+                        <div class="percentage text-[#999]">80%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            JavaScript
+
+                        </p>
+                        <div class="percentage text-[#999]">70%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level js"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            Bootstrap
+
+                        </p>
+                        <div class="percentage text-[#999]">75%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bootstrap"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name flex justify-between">
+                        <p class="text-[#999]">
+                            Tailwind CSS
+
+                        </p>
+                        <div class="percentage text-[#999]">85%</div> <!-- Added percentage here -->
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level tailwind"></div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <div class="bg-[#181818] pb-20">
         <div class="max-w-[1200px] mx-auto py-24">
