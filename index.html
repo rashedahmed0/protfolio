@@ -130,6 +130,32 @@
             left: 5%;
             font-size: 20px;
         }
+
+        .typing-container {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #333;
+            width: 22ch;
+            /* Adjust width based on text length */
+            animation: typing 4s steps(22) infinite, blink 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 22ch;
+                /* Adjust to match text width */
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 
@@ -159,7 +185,7 @@
                                     <li><a href="./contact.html">Contact</a></li>
                                     <div
                                         class="  lg:hidden w-[90%] bg-[#ea8f10] rounded-lg  px-6  py-3 mx-auto  text-md text-center font-semibold">
-                                        <a class="">Let's Work Together</a>
+                                        <a class="" href="./contact.html">Let's Work Together</a>
                                     </div>
 
                                 </ul>
@@ -171,7 +197,7 @@
                                 <li><a href="./index.html">Home</a> </li>
                                 <li><a href="./about.html">About</a></li>
                                 <li><a href="./service.html">Services</a></li>
-                                <li><a href="./journal.html">Journal</a></li>
+                                <li><a href="./error.html">Journal</a></li>
                                 <li><a href="./contact.html">Contact</a></li>
 
                             </ul>
@@ -179,14 +205,18 @@
 
                     </div>
                     <div class="navbar-end hidden lg:flex">
-                        <a class="lets-btn bg-[]">Let's Work Together</a>
+                        <a href="./contact.html" class="lets-btn bg-[] ">Let's Work Together</a>
                     </div>
                 </div>
                 <section class="banner w-[90%] mx-auto pt-20 pb-5">
                     <div class="flex justify-between flex-col lg:flex-row">
                         <div class="text text-white basis-[60%]">
                             <div class="">
-                                <h3 class="text-xl rashed">Hello, I'm Rashed </h3>
+                                <h3 class="text-xl rashed">
+                                    <div class="typing-container">
+                                        I am Rashed Ahommod
+                                    </div>
+                                </h3>
                                 <span class="rashed-bg"></span>
 
                             </div>
@@ -335,7 +365,11 @@
 
     </div>
 
-    <div class="bg-[#fef6e6] pb-20">
+
+
+    <!-- here clint and brand and testimonial section are commented -->
+    <!-- <div class="bg-[#fef6e6] pb-20">
+
         <div class="max-w-[1200px] mx-auto py-24">
             <div class="w-[90%] mx-auto">
                 <div class="  mb-5">
@@ -464,18 +498,20 @@
                 </div>
             </section>
         </div>
-    </div>
+    </div> -->
+    <!-- here finish the comment  -->
+
+
     <div class="bg-[#212722] pb-20">
         <div class="max-w-[1200px] mx-auto py-24">
             <div class="w-[90%] mx-auto">
                 <div class="text-center">
-                    <h1 class="md:text-5xl text-4xl lg:text-6xl text-white font-bold my-10">Get started with a
-                        consultation today.</h1>
-                    <p class="text-xl text-white  my-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                        rem,
-                        esse doloribus sint eaque at
-                        debitis enim vitae minus expedita ratione dignissimos sit nostrum optio sequi. Ipsa at beatae
-                        quam.
+                    <h1 class="md:text-5xl text-4xl lg:text-6xl text-white font-bold my-10">Get Your Website Today</h1>
+                    <p class="text-xl text-white  my-10">Ready to take your online presence to the next level? Whether
+                        you need a brand-new website, a redesign, or custom features, I’m here to help you make it
+                        happen. With personalized web development solutions, I ensure your project is tailored to your
+                        needs. <span class="text-[#ea8f10]">Let’s get started</span> today and turn your ideas into a
+                        fully functional website!
 
                     </p>
                     <div
@@ -489,6 +525,8 @@
     <div class="bg-[#181818] pb-20">
         <div class="max-w-[1200px] mx-auto py-24">
             <div class="w-[90%] mx-auto">
+                <!-- here commnet blog section -->
+                <!--                 
                 <div class="text-center">
                     <p class="text-2xl text-[#ea8f10]   my-10">
                         Recent Articles
@@ -545,7 +583,7 @@
                         </p>
 
                     </div>
-                </div>
+                </div> -->
 
                 <footer class="lg:flex lg:justify-between border-t">
                     <div class="w-full lg:w-[45%] my-10">
@@ -560,7 +598,7 @@
                             <li class="text-xl text-[#999] mb-3"><a href="./index.html">Home</a></li>
                             <li class="text-xl text-[#999] mb-3"><a href="./about.html">About</a></li>
                             <li class="text-xl text-[#999] mb-3"><a href="./service.html">Services</a></li>
-                            <li class="text-xl text-[#999] mb-3"><a href="./journal.html">Journal</a></li>
+                            <li class="text-xl text-[#999] mb-3"><a href="./error.html">Journal</a></li>
                             <li class="text-xl text-[#999] mb-3"><a href="./contact.html">Contact</a></li>
 
                         </ul>
