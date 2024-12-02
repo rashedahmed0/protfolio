@@ -240,6 +240,10 @@
                 /* Adjust percentage for skill level */
             }
         }
+
+        .exparties:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
     </style>
 </head>
 
@@ -313,11 +317,13 @@
 
     <div class="max-w-[1200px] mx-auto py-24">
         <div class="w-[90%] mx-auto">
-            <h1 class="text-3xl md:text-5xl  font-bold py-9 text-center">Some inspiring words to describe yourself</h1>
-            <p class="text-xl ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eos quas blanditiis,
-                quos sint nostrum fugit aperiam inventore optio itaque molestias corporis, ipsa tenetur eligendi nihil
-                iste porro, natus culpa consequuntur? Maxime, corporis tempore. Sed tenetur veritatis velit recusandae
-                eum, molestiae voluptate ducimus laudantium esse illo doloribus atque eligendi deleniti iusto.</p>
+            <h1 class="text-3xl md:text-5xl  font-bold py-9 text-center"> Always focused on achieving goals, no matter
+                the challenges.</h1>
+            <p class="text-xl text-[#777] ">
+                I am passionate about web design and development, dedicated to creating user-friendly and responsive
+                websites. I combine creativity and technical skills to deliver visually appealing and functional
+                designs. I tackle challenges with focus and determination, turning problems into solutions and striving
+                to grow with every project.</p>
         </div>
         <div class="flex justify-center w-[90%] mx-auto">
             <img class="w-[]" src="./image/about.jpg" alt="">
@@ -329,41 +335,36 @@
                 <span class="rashed-bg"></span>
 
             </div>
-            <div class="pl-5">
-                <div class="">
+            <div class="pl-5 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="border-r-2 border-[#ea8f10] pr-3">
                     <h1 class="text-2xl text-[#333] font-semibold my-3">Bachelor’s in Computer Science and Engineering
                     </h1>
                     <h2 class="text-xl text-[#777] my-2">National University <span
                             class="border-l-2 pl-1 text-lg font-semibold">2020-2021</span>
                     </h2>
-                    <p class="text-[#777]">Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor
-                        eirmod. Eos ipsum
-                        est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem
-                        diam
+                    <p class="text-[#777]">Bachelor’s in Computer Science and Engineering from National University
+                        (2020-2021).
                     </p>
                 </div>
-                <div class="">
+                <div class="border-r-2 border-[#ea8f10] pr-3">
                     <h1 class="text-2xl text-[#333] font-semibold my-3">Alim /Higher Secondary Certificate (HSC)
                     </h1>
                     <h2 class="text-xl text-[#777] my-2">Jamea Quasemia Kamil Madrasah <span
                             class="border-l-2 pl-1 text-lg font-semibold">2018-19</span>
                     </h2>
-                    <p class="text-[#777]">Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor
-                        eirmod. Eos ipsum
-                        est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem
-                        diam
+                    <p class="text-[#777]">Alim (Higher Secondary Certificate - HSC) from Jamea Quasemia Kamil Madrasah
+                        (2018-19). Completed studies in general subjects along with Islamic education.
                     </p>
                 </div>
-                <div class="">
+                <div class="border-r-2 border-[#ea8f10] pr-3">
                     <h1 class="text-2xl text-[#333] font-semibold my-3">Dakhil /Secondary School Certificate(SSC)
                     </h1>
                     <h2 class="text-xl text-[#777] my-2">Jamea Quasemia Kamil Madrasah <span
                             class="border-l-2 pl-1 text-lg font-semibold">2016-17</span>
                     </h2>
-                    <p class="text-[#777]">Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor
-                        eirmod. Eos ipsum
-                        est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem
-                        diam
+                    <p class="text-[#777]">
+                        Dakhil (Secondary School Certificate - SSC) from Jamea Quasemia Kamil Madrasah (2016-17).
+                        Completed studies in general subjects along with Islamic education.
                     </p>
                 </div>
             </div>
@@ -371,10 +372,9 @@
         <div class="w-[90%] mx-auto">
             <div class="">
                 <h3 class="text-3xl font-bold text-[#333] rashed">Skills </h3>
-                <p class="text-xl text-[#777] my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-                    tempore labore
-                    illo consequatur quae. Aspernatur animi modi ex quasi explicabo, vel mollitia, neque voluptate iure
-                    similique ipsam architecto aut cum?</p>
+                <p class="text-xl text-[#777] my-5">I am skilled in web design and development, creating user-friendly,
+                    responsive, and visually appealing websites. Proficient in HTML, CSS, JavaScript, and modern
+                    frameworks, I ensure seamless functionality and design.</p>
                 <span class="rashed-bg"></span>
 
             </div>
@@ -443,28 +443,156 @@
                     <a class="text-[#333]">More Skill</a>
                 </div>
             </div>
+            <div class="w-[100%] mx-auto py-10 mt-10">
+                <!-- Header -->
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl font-bold text-gray-800">My Web Design Expertise</h1>
+                </div>
+
+                <!-- Expertise Section -->
+                <div class=" grid grid-cols-1 md:grid-cols-2">
+                    <!-- Expertise 1 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">Dynamic User Interface Development</h2>
+                        <p class="text-[#777] text-xl">
+                            Expertise in using JavaScript to create interactive, user-friendly web pages by manipulating
+                            the DOM and updating the UI dynamically based on user actions.
+                        </p>
+                    </div>
+
+                    <!-- Expertise 2 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">Responsive Web Design</h2>
+                        <p class="text-[#777] text-xl">
+                            Skilled in crafting layouts that work seamlessly across various screen sizes and devices,
+                            ensuring a consistent user experience.
+                        </p>
+                    </div>
+
+                    <!-- Expertise 3 -->
+                    <div class="my-10 border-l-2 border-[#ea8f10] pl-5 py-3">
+                        <h2 class="text-2xl font-semibold mb-2">HTML & CSS Proficiency</h2>
+                        <p class="text-[#777] text-xl">
+                            Strong foundation in structuring web content with HTML and styling it effectively using CSS,
+                            including basic animations and layout techniques like Flexbox and Grid.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="w-[100%] mt-10">
-                <h1 class="text-3xl font-bold my-4">Why Work With Me</h1>
-                <p class="text-xl text-[#777]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta
-                    consequatur necessitatibus mollitia illum! Voluptatibus dolore quaerat, accusantium non
-                    exercitationem eum accusamus, blanditiis qui voluptate dolorum quos eius culpa tenetur voluptates
-                    unde neque adipisci maxime repellat magni quidem doloremque eveniet!</p>
+                <h1 class="text-3xl font-semibold mb-2">Why Work With Me</h1>
+                <p class="text-xl text-[#777]"> I specialize in creating user-friendly, dynamic, and responsive websites
+                    that deliver an exceptional experience. With a focus on intuitive design and seamless functionality,
+                    I ensure your site stands out while adapting flawlessly to any device. <span
+                        class="text-[#ea8f10]">Let’s work together</span> to bring your vision to life and make your
+                    online presence truly impactful!!</p>
             </div>
         </div>
 
     </div>
+    <div class="bg-[#fef6e6] pb-20">
+        <div class="max-w-[1200px] mx-auto py-24">
+            <div class="w-[90%] mx-auto">
+                <div class=" text-center">
+                    <h4 class="text-xl text-[#ea8f10]">Testimonials</h4>
+                    <h1 class="md:text-4xl text-3xl font-bold">Reviews From Real Clients</h1>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1200px] mx-auto">
+            <section class="w-[90%] mx-auto">
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-[100%] md:w-[50%] mx-5">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center  lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-01.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">jonh doe</h1>
+                                    <p class="text-[#777]">ceo of facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item2" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl "> elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-02.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">William</h1>
+                                    <p class="text-[#777]">ceo of paypal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item3" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center  lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-03.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">Oliver</h1>
+                                    <p class="text-[#777]">ceo of google</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item4" class="carousel-item w-[100%] md:w-[50%] mx-10">
+                        <div class="testimonial ">
+                            <div class="commnet flex jsutify-center lg:h-44 pb-5  w-[100%]">
+                                <p class="text-xl ">consectetur adipisicing elit. Itaque
+                                    inventore
+                                    delectus blanditiis dignissimos illo facilis minima cupiditate voluptatibus
+                                    repudiandae libero molestias numquam quam mollitia tenetur eveniet quod porro ut,
+                                    voluptas sapiente, reiciendis quo saepe laborum! Assumenda veniam quisquam aut
+                                    sapiente.</p>
+                            </div>
+                            <div class="img flex items-center gap-5 mt-5">
+                                <img src="./image/avatars/user-04.jpg" alt="" class="w-20 h-20 rounded-[50%]">
+                                <div class="">
+                                    <h1 class="text-xl font-semibold">henry</h1>
+                                    <p class="text-[#777]">ceo of youtube</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <div class="bg-[#181818] pb-20">
         <div class="max-w-[1200px] mx-auto py-24">
             <div class="w-[90%] mx-auto">
                 <footer class="lg:flex lg:justify-between border-t">
                     <div class="w-full lg:w-[45%] my-10">
                         <h1 class="text-white text-3xl font-bold pb-5">Rashed.</h1>
-                        <p class="text-xl text-[#999] leading-8">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Repellendus quidem qui quos
-                            pariatur quod eveniet, nemo totam vitae. Quidem, eum nam reiciendis vitae inventore ducimus
-                            ex
-                            laborum ut consequatur ullam?</p>
+                        <p class="text-xl text-[#999] leading-8">A motivated Front-End Web Developer skilled in HTML,
+                            CSS, JavaScript, React, and responsive design with frameworks like Bootstrap and Tailwind
+                            CSS. Experienced in creating responsive websites and solving problems</p>
                     </div>
                     <div class="w-full lg:w-[15%] my-10">
                         <h1 class="text-3xl font-bold text-white pb-5">Site Links</h1>

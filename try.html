@@ -130,6 +130,32 @@
             left: 5%;
             font-size: 20px;
         }
+
+        .typing-container {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #333;
+            width: 22ch;
+            /* Adjust width based on text length */
+            animation: typing 4s steps(22) infinite, blink 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 22ch;
+                /* Adjust to match text width */
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 
@@ -186,7 +212,11 @@
                     <div class="flex justify-between flex-col lg:flex-row">
                         <div class="text text-white basis-[60%]">
                             <div class="">
-                                <h3 class="text-xl rashed">Hello, I'm Rashed </h3>
+                                <h3 class="text-xl rashed">
+                                    <div class="typing-container">
+                                        I am Rashed Ahommod
+                                    </div>
+                                </h3>
                                 <span class="rashed-bg"></span>
 
                             </div>
